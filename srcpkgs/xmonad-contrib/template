@@ -1,5 +1,5 @@
-# Template file for 'xmonad'
-pkgname=xmonad
+# Template file for 'xmonad-contrib'
+pkgname=xmonad-contrib
 version=0.13
 revision=1
 build_style=haskell-stack
@@ -12,3 +12,7 @@ license="BSD-3"
 homepage="http://xmonad.org/"
 distfiles="http://hackage.haskell.org/package/${pkgname}-${version}/${pkgname}-${version}.tar.gz"
 checksum="a760827fe5b1f99d783f52ccbb72b272d02d53daa26757363cde3ceba014476e"
+
+do_install() {
+	vlicense LICENSE
+}

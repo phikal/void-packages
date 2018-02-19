@@ -14,4 +14,5 @@ checksum="f9f81b63569f18c777a939741024ec3ae34e4ec84015e5cc50f6622034a303ca"
 
 do_install() {
 	vman man/$pkgname.1
+	vlicense LICENSE
 }
