@@ -1,0 +1,17 @@
+# Template file for 'xmonad'
+pkgname=xmonad
+version=0.13
+revision=1
+build_style=haskell-stack
+stackage="lts-10.5"
+makedepends="libX11-devel libXinerama-devel libXext-devel libXrandr-devel"
+short_desc="A dynamic tiling X11 window manager that is written and configured in Haskell"
+maintainer="Philip K. <philippija@gmail.com>"
+license="BSD-3"
+homepage="http://xmonad.org/"
+distfiles="http://hackage.haskell.org/package/${pkgname}-${version}/${pkgname}-${version}.tar.gz"
+checksum="f9f81b63569f18c777a939741024ec3ae34e4ec84015e5cc50f6622034a303ca"
+
+do_install() {
+	vman man/$pkgname.1
+}
