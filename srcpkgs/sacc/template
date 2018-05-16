@@ -1,0 +1,20 @@
+# Template file for 'sacc'
+pkgname=sacc
+version=v1.00
+revision=1
+build_style=gnu-makefile
+hostmakedepends="curl"
+makedepends="ncurses-devel"
+short_desc="A simple gopher client"
+maintainer="Philip K <philip@warpmail.net>"
+license="GPL-3"
+homepage="gopher://bitreich.org/9/scm/${pkgname}"
+distfiles="${homepage}/tag/${pkgname}-${version}.tgz"
+checksum=e4cc0fe68e4fa5b75eb2fcf750d4d9d10cf22db41ae8f256748d8458a268bf66
+
+XBPS_FETCH_CMD=curl
+
+post_install() {
+	vman sacc.1
+	vlicense LICENSE
+}
