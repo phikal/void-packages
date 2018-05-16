@@ -1,0 +1,11 @@
+# Template file for 'uniutils'
+pkgname=uniutils
+version=2.27
+revision=1
+build_style=gnu-configure
+short_desc="A set of programs for manipulating and analysing Unicode text"
+maintainer="Philip K <philip@warpmail.net>"
+license="GPL-3.0-or-later"
+homepage="http://billposer.org/Software/uniutils.html"
+distfiles="http://billposer.org/Software/Downloads/uniutils-${version}.tar.gz"
+checksum=c662a9215a3a67aae60510f679135d479dbddaf90f5c85a3c5bab1c89da61596
